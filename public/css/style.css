@@ -1,0 +1,22 @@
+.nav-link:hover {
+    color: #ffc107;
+}
+
+header {
+    margin-bottom: 95px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-outline .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: none;
+}
+
+
+/* Main style */
+main {
+    margin-top: 95px;
+}

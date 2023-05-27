@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="Bar">
                     <!-- Navbar brand -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="images/logo/logo.png" height="70" alt="BAG Logo" loading="lazy" />
+                        <img src="images/logo/logo.png" height="50" alt="BAG Logo" loading="lazy" />
                     </a>
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">

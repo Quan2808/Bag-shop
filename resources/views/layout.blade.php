@@ -17,8 +17,9 @@
 
 <body>
     <header>
+
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <!-- Container wrapper -->
             <div class="container">
                 <!-- Toggle button -->
@@ -30,9 +31,9 @@
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="Bar">
                     <!-- Navbar brand -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="images/logo/logo.png" height="50" alt="BAG Logo" loading="lazy" />
-                    </a>
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="images/logo/logo.png" height="50" alt="BAG Logo" loading="lazy" />
+                </a> --}}
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -51,7 +52,8 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="{{ url('/product') }} ">Product</a></li>
                                 <li><a class="dropdown-item" href="{{ url('/laptop-bag') }} ">Laptop Bag</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/crossbody-bag') }} ">Crossbody bag</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/crossbody-bag') }} ">Crossbody bag</a>
+                                </li>
                                 <li><a class="dropdown-item" href="{{ url('/travel-bag') }} ">Travel bag</a></li>
                             </ul>
                         </li>
@@ -84,105 +86,62 @@
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
-
-                    <a class="link-secondary me-3" href="{{ url('/cart') }}">
+                    <!-- Icon -->
+                    <a class="text-reset me-3" href="{{ url('/cart') }}">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
 
-                    <div class="nav-item dropdown me-3">
-                        <a class="nav-link link-secondary me-3" href="#" id="search" data-mdb-toggle="dropdown"
-                            aria-expanded="false">
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="Search"
+                            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-search"></i>
                         </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="search">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <div class="input-group">
-                                        <div class="form-outline">
-                                            <input type="search" id="form1" class="form-control" />
-                                            <label class="form-label" for="form1">Search</label>
-                                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Search">
+                            <li class="p-3">
+                                <form>
+                                    <!-- Name input -->
+                                    <div class="form-outline mb-2">
+                                        <input type="text" id="form5Example1" class="form-control" />
+                                        <label class="form-label" for="form5Example1">Search</label>
                                     </div>
-                                </a>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block"><i
+                                            class="fas fa-search"></i></button>
+                                </form>
+                            </li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="User" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="User">
+                            {{-- <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li> --}}
+                            <li>
+                                <a class="dropdown-item" href="#">Login</a>
                             </li>
                         </ul>
                     </div>
-
                 </div>
+                <!-- Right elements -->
             </div>
+            <!-- Container wrapper -->
         </nav>
+        <!-- Navbar -->
+
+
     </header>
 
-    {{-- <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light  mb-5">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="images/logo/logo.png" height="70" alt="BAG Logo" loading="lazy" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/introduce') }}">Introduce</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Product
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="laptop-bag.php">Laptop Bag</a></li>
-                                <li><a class="dropdown-item" href="crossbody-bag.php">Crossbody bag</a></li>
-                                <li><a class="dropdown-item" href="travel-bag.php">Travel bag</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Product on demand
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="custom-made-backpacks.php">Custom made
-                                        backpacks</a>
-                                </li>
-                                <li><a class="dropdown-item" href="custom-made-bags.php">Custom made bags</a></li>
-                                <li><a class="dropdown-item" href="custom-made-pairs.php">Custom made pairs</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/agent-system') }}">Agent system</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/contact-us') }}">Contact</a>
-                        </li>
-                    </ul>
-
-                    <form class="d-flex border-warning" role="search">
-                        <div class="input-group ">
-                            <div class="form-outline">
-                                <input id="search-input" type="search" id="search" class="form-control" />
-                                <label class="form-label" for="form1">Search</label>
-                            </div>
-                            <button id="search-button" type="button" class="btn btn-warning">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-
-
-                </div>
-            </div>
-        </nav>
-    </header> --}}
 
     @yield('content')
 

@@ -2,8 +2,8 @@
 @section('title', 'Home')
 
 @section('content')
-   <main class="mt-5">
-        
+    <main class="mt-5">
+
         <section>
             <div id="carousel-1" class="carousel slide carousel-fade mb-5" data-mdb-ride="carousel">
                 <div class="carousel-inner">
@@ -51,7 +51,8 @@
                                         quality
                                         reputation
                                     </p>
-                                    <a href="{{ url('/leading-quality-and-prestige-garment-company') }}" class="btn btn-warning btn-rounded">Read more</a>
+                                    <a href="{{ url('/leading-quality-and-prestige-garment-company') }}"
+                                        class="btn btn-warning btn-rounded">Read more</a>
                                 </div>
                             </div>
 
@@ -70,7 +71,8 @@
                                 <div class="card-body">
                                     <p class="card-title">Design and manufacture backpacks and bags according to bulk
                                         requirements for businesses</p>
-                                    <a href="{{ url('/manufacturing-on-demand-premium-bags-nationwide') }}" class="btn btn-warning btn-rounded">Read more</a>
+                                    <a href="{{ url('/manufacturing-on-demand-premium-bags-nationwide') }}"
+                                        class="btn btn-warning btn-rounded">Read more</a>
                                 </div>
                             </div>
 
@@ -162,31 +164,30 @@
                         <div class="col-lg-4 col-md-12">
                             <img src="images\banners\index\service/Banner-6.png" class="card-img-top">
                         </div>
-        
+
                         <div class="col-lg-4 col-md-6">
                             <img src="images\banners\index\service/Banner-4.png" class="card-img-top">
                         </div>
-        
+
                         <div class="col-lg-4 col-md-6">
                             <img src="images\banners\index\service/Banner-5.png" class="card-img-top">
                         </div>
-        
+
                     </div>
                     <div class="row gx-1 mt-1">
-        
+
                         <div class="col-md-6">
-                    <img src="images\banners\index\service/Banner-7.png" class="card-img-top">
+                            <img src="images\banners\index\service/Banner-7.png" class="card-img-top">
                         </div>
-                    
+
                         <div class="col-md-6">
-                    <img src="images\banners\index\service/Banner-9.png" class="card-img-top">
+                            <img src="images\banners\index\service/Banner-9.png" class="card-img-top">
                         </div>
-                    
-                      </div>
+
+                    </div>
                 </div>
             </div>
         </section>
-
         
     </main>
 @endsection

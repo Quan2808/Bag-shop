@@ -2,7 +2,7 @@
 @section('title', 'Agent system')
 
 @section('content')
-   <main class="mt-5">
+   <main>
         <style>
             .section-parallax-breadcrumb {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banners/Banner.png);

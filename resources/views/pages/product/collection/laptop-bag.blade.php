@@ -39,8 +39,10 @@
                                 <i class="fa-solid fa-house"></i> Home
                             </a>
                         </li>
-                        <li class="breadcrumb-item active text-white" aria-current="page">
-                            Category
+                        <li class="breadcrumb-item">
+                            <a class="text-white link-body-emphasis text-decoration-none" href=" {{ url('/product') }}">
+                                Product
+                            </a>
                         </li>
                         <li class="breadcrumb-item active text-white" aria-current="page">
                             Laptop bag

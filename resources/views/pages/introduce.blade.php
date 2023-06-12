@@ -92,57 +92,6 @@
             </div>
         </section>
 
-        <section class="member">
-            <div class="mb-10 container text-center">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-10 col-xl-8">
-                        <h2 class="fw-bold mb-5">
-                            MEMBER</h2>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-around mb-3">
-                    <div class="p-2 col-example">
-                        <div class="d-flex justify-content-center mb-4"> <img
-                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                                class="rounded-circle shadow-1-strong" width="150" height="150"
-                                data-builder-edit="image" data-builder-name="image1" alt=""
-                                aria-controls="#picker-editor"> </div>
-                        <h5 class="mb-3">Tran Cao Anh Duc</h5>
-                        <h6 class="text-primary mb-3" data>Founder</h6>
-                    </div>
-                    <div class="p-2 col-example">
-                        <div class="d-flex justify-content-center mb-4"> <img
-                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                                class="rounded-circle shadow-1-strong" width="150" height="150"
-                                data-builder-edit="image" data-builder-name="image1" alt=""
-                                aria-controls="#picker-editor"> </div>
-                        <h5 class="mb-3">Vu Tuan Anh</h5>
-                        <h6 class="text-primary mb-3" data>Founder</h6>
-                    </div>
-                    <div class="p-2 col-example">
-                        <div class="d-flex justify-content-center mb-4"> <img
-                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                                class="rounded-circle shadow-1-strong" width="150" height="150"
-                                data-builder-edit="image" data-builder-name="image1" alt=""
-                                aria-controls="#picker-editor"> </div>
-                        <h5 class="mb-3">Le Thanh Dat</h5>
-                        <h6 class="text-primary mb-3" data>Founder</h6>
-                    </div>
-                    <div class="p-2 col-example">
-                        <div class="d-flex justify-content-center mb-4"> <img
-                                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                                class="rounded-circle shadow-1-strong" width="150" height="150"
-                                data-builder-edit="image" data-builder-name="image1" alt=""
-                                aria-controls="#picker-editor"> </div>
-                        <h5 class="mb-3">Nguyen Trung Quan</h5>
-                        <h6 class="text-primary mb-3" data>Founder</h6>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
         <section class="stories">
             <div class="container">
                 <h1 class="p-5 text-body-emphasis fw-bold">CORE VALUES</h1>

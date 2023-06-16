@@ -16,7 +16,6 @@ Route::get('/why-choose-us', [HomeController::class, 'whyChooseUs']);
 Route::get('/order-process', [HomeController::class, 'orderProcess']);
 Route::get('/leading-quality-and-prestige-garment-company', [HomeController::class, 'leadingQualityAndPrestigeGarmentCompany']);
 Route::get('/manufacturing-on-demand-premium-bags-nationwide', [HomeController::class, 'manufacturingOnDemandPremiumBagsNationwide']);
-//End FAQ
 
 //Product
 Route::get('/cart', function () {

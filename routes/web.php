@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'isndex']);
 Route::get('/introduce', [HomeController::class, 'introduce']);
 Route::get('/agent-system', [HomeController::class, 'agentSystem']);
 Route::get('/contact-us', [HomeController::class, 'contactUs']);
@@ -18,23 +18,9 @@ Route::get('/leading-quality-and-prestige-garment-company', [HomeController::cla
 Route::get('/manufacturing-on-demand-premium-bags-nationwide', [HomeController::class, 'manufacturingOnDemandPremiumBagsNationwide']);
 
 //Product
-Route::get('/cart', function () {
-    return view('pages.product.collection.cart');
-});
-
-Route::get('/laptop-bag', function () {
-    return view('pages.product.collection.laptop-bag');
-});
-
-Route::get('/crossbody-bag', function () {
-    return view('pages.product.collection.crossbody-bag');
-});
-
-Route::get('/travel-bag', function () {
-    return view('pages.product.collection.travel-bag');
-});
-
-Route::get('/product', function () {
-    return view('pages.product.collection.product');
-});
+Route::get('/cart', [HomeController::class, 'cart']);
+Route::get('/laptop-bag', [HomeController::class, 'laptopBag']);
+Route::get('/crossbody-bag', [HomeController::class, 'crossbodyBag']);
+Route::get('/travel-bag', [HomeController::class, 'travelBag']);
+Route::get('/product', [HomeController::class, 'product']);
 //End Product

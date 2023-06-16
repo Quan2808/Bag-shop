@@ -65,4 +65,29 @@ class HomeController extends Controller
     {
         return view('pages.faq.manufacturing-on-demand-premium-bags-nationwide');
     }
+
+    public function cart()
+    {
+        return view('pages.product.collection.cart');
+    }
+
+    public function laptopBag()
+    {
+        return view('pages.product.collection.laptop-bag');
+    }
+
+    public function crossbodyBag()
+    {
+        return view('pages.product.collection.crossbody-bag');
+    }
+
+    public function travelBag()
+    {
+        return view('pages.product.collection.travel-bag');
+    }
+
+    public function product()
+    {
+        return view('pages.product.collection.product');
+    }
 }

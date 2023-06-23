@@ -1,8 +1,8 @@
-@extends('layout')
+@extends('pages.layouts.app')
 @section('title', 'Contact us')
 
 @section('content')
-   <main class="mt-5">
+    <main class="mt-5">
         <style>
             .section-parallax-breadcrumb {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banners/Banner.png);
@@ -10,27 +10,6 @@
 
             .stories {
                 background-image: url(images/banners/About/backgroud.png);
-            }
-
-            .bg-top {
-                background-position: 50% -5px;
-                background-size: cover;
-                padding: 190px 0;
-                padding: 100px 0;
-            }
-
-            .section-parallax {
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
-            }
-
-            .form-control:focus {
-                border-color: #ffc107;
-                box-shadow: none;
             }
         </style>
 

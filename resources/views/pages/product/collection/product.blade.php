@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('pages.layouts.app')
 @section('title', 'Product')
 
 @section('content')
@@ -6,22 +6,6 @@
         <style>
             .section-parallax-breadcrumb {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banners/Banner.png);
-            }
-
-            .bg-top {
-                background-position: 50% -5px;
-                background-size: cover;
-                padding: 190px 0;
-                padding: 100px 0;
-            }
-
-            .section-parallax {
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
             }
 
             h6 b {
@@ -44,6 +28,55 @@
                         </li>
                     </ol>
                 </nav>
+            </div>
+        </section>
+
+        <section style="background-color: #eee;">
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    @foreach ($list as $product)
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="{{ asset('images/products/laptop-bag/KINGBAG READY.jpg'.$product->thumbnail) }}" class="card-img-top" alt="{{ $product->model }}">
+                                <div class="card-body pb">
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Model</a></p>
+                                        <p class="text-dark">{{ $product->model }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Price</a></p>
+                                        <p class="text-dark">{{ $product->price }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Material</a></p>
+                                        <p class="text-dark">{{ $product->material }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Size</a></p>
+                                        <p class="text-dark">{{ $product->size }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Style</a></p>
+                                        <p class="text-dark">{{ $product->style }}</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p><a href="#!" class="text-danger fw-bold">Maximum load</a></p>
+                                        <p class="text-dark">{{ $product->max_load }} kg</p>
+                                    </div>
+                                </div>
+                                <hr class="my-0" />
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-evenly align-items-center pb-2 mb-1">
+                                        <button type="button" class="btn btn-primary btn-rounded">Details</button>
+                                        <button type="button" class="btn btn-warning btn-rounded">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
             </div>
         </section>
 

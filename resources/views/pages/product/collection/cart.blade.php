@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('pages.layouts.app')
 @section('title', 'Cart')
 
 @section('content')
@@ -6,22 +6,6 @@
         <style>
             .section-parallax-breadcrumb {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/banners/Banner.png);
-            }
-
-            .bg-top {
-                background-position: 50% -5px;
-                background-size: cover;
-                padding: 190px 0;
-                padding: 100px 0;
-            }
-
-            .section-parallax {
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
             }
 
             h6 b {

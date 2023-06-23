@@ -1,9 +1,8 @@
-@extends('layout')
+@extends('pages.layouts.app')
 @section('title', 'Home')
 
 @section('content')
     <main class="mt-5">
-
         <section>
             <div id="carousel-1" class="carousel slide carousel-fade mb-5" data-mdb-ride="carousel">
                 <div class="carousel-inner">
@@ -188,6 +187,6 @@
                 </div>
             </div>
         </section>
-        
+
     </main>
 @endsection

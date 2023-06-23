@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -88,6 +91,8 @@ class HomeController extends Controller
 
     public function product()
     {
-        return view('pages.product.collection.product');
+        $list = DB::table('product')->get();
+        $product_manage = view('pages.product.collection.product')->with('list', $list);
+        return view('pages.layouts.app', ['content' => $product_manage]);
     }
 }

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('pages.layouts.app')
 @section('title', 'Introduce')
 
 @section('content')
@@ -12,26 +12,12 @@
                 background-image: url(images/banners/About/backgroud.png);
             }
 
-            .bg-top {
-                background-position: 50% -5px;
-                background-size: cover;
-                padding: 190px 0;
-                padding: 100px 0;
-            }
-
-            .section-parallax {
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
-            }
+            
         </style>
 
         <section class="section-parallax section-parallax-breadcrumb bg-top mb-5">
             <div class="container">
-                <h1 class="text-white"><b>Introduce</b></h1>
+                <h1 class="text-white">Introduce</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb p-3">
                         <li class="breadcrumb-item">
